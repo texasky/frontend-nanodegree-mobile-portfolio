@@ -42,6 +42,36 @@ footer {
 }
 footer span { float: right; font-style: italic; }
 
+.myinfo {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+
+.myinfo::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.myinfo p {
+  display: block;
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+  font-size:1.5em;
+  font-weight: bold;
+  color: red;
+}
+
+.myinfo span {
+  font-weight: 400;
+}
+
+.me img {
+  float: left;
+  border-radius: 45%;
+}
+
 /* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {
   body { font-size: 12px;}
